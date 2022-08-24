@@ -1,0 +1,1 @@
+var ctx=gameboard.getContext("2d");

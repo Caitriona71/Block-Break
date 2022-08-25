@@ -6,8 +6,18 @@ drawBlocks();
 function drawBlocks(){
     for(a=0; a<5; a++){
         for(b=0; b<8; b++){
-            ctx.fillStyle="#ff00"+(40+a*40).toString(16);
+            ctx.fillStyle='#ff00'+(40+a*40).toString(16);
             ctx.fillRect(b*80,100+a*20,79,19);
         }
     }
 }   
+
+var gameTimer=setInterval(mainLoop, 25);
+function mainLoop() {
+    ctx.clearRect(x,y,7,7);
+    x=x+speedX;
+    y=y+speedY;
+
+    ctx.fillStyle='#ffffff';
+    ctx.fillRect(x,y,7,7);
+}

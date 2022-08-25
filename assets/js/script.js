@@ -17,7 +17,12 @@ function mainLoop() {
     ctx.clearRect(x,y,7,7);
     x=x+speedX;
     y=y+speedY;
-
+//checkForStrikes();
     ctx.fillStyle='#ffffff';
     ctx.fillRect(x,y,7,7);
+
+ctx.clearRect(0,460,640,20);
+ctx.fillStyle='#cccccc';
+ctx.fillRect(batX-60,460,120,20);
+
 }

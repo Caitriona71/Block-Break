@@ -20,6 +20,8 @@ function mainLoop() {
 //checkForStrikes();
     ctx.fillStyle='#ffffff';
     ctx.fillRect(x,y,7,7);
+   if((x>620)||(x<0))speedX=-speedX;
+   if(y<28)speedY=8;
 
 ctx.clearRect(0,460,640,20);
 ctx.fillStyle='#cccccc';
